@@ -40,7 +40,11 @@ public class EmailValidation1 {
             }
             i++;
         }
-        if(i>=mail.length)
+        if(mail.startsWith(gmailValidation,(mail.length)-10)))
+            System.out.println("Valid Mail ID");
+        else
+            System.out.println("Invalid Mail ID");
+        /*if(i>=mail.length)
         {
             System.out.println("Invalid mail ID");
             System.exit(0);
@@ -62,7 +66,7 @@ public class EmailValidation1 {
             System.out.println("Invalid mail ID");
             System.exit(0);
         }
-        System.out.println("Valid mail");
+        System.out.println("Valid mail");*/
     }
     
 }
