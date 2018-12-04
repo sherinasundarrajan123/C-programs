@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        Scanner sc=new Scanner(System.in);
+        String inpMail=sc.nextLine();
+    String emailValidator= "^[a-z]+([a-z0-9]*|[a-z_]*)(@gmail.com)$";
+    Pattern pattern=Pattern.compile(emailValidator);
+    if(Pattern.matches(emailValidator,inpMail))
+    System.out.println("Valid mail");
+    else
+    System.out.println("Invalid");
+    
+     }
+}
